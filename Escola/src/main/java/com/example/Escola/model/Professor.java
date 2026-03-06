@@ -2,7 +2,7 @@ package com.example.Escola.model;
 
 public class Professor {
 
-    private int id;
+    private Long id;
     private String nome;
     private String email;
     private String disciplina;
@@ -13,18 +13,18 @@ public class Professor {
         this.disciplina = disciplina;
     }
 
-    public Professor(int id, String nome, String email, String disciplina) {
+    public Professor(Long id, String nome, String email, String disciplina) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.disciplina = disciplina;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

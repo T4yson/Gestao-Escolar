@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Curso {
 
-    private int id;
+    private Long id;
     private String nome;
     private String codigo;
     private List<Integer> listaProfessrorId;
@@ -15,18 +15,18 @@ public class Curso {
         this.listaProfessrorId = listaProfessrorId;
     }
 
-    public Curso(int id, String nome, String codigo, List<Integer> listaProfessrorId) {
+    public Curso(Long id, String nome, String codigo, List<Integer> listaProfessrorId) {
         this.id = id;
         this.nome = nome;
         this.codigo = codigo;
         this.listaProfessrorId = listaProfessrorId;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

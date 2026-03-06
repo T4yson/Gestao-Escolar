@@ -4,7 +4,7 @@ import java.sql.Date;
 
 public class Aluno {
 
-    private int id;
+    private Long id;
     private String nome;
     private String matricula;
     private Date dataNascimento;
@@ -15,18 +15,18 @@ public class Aluno {
         this.dataNascimento = dataNascimento;
     }
 
-    public Aluno(int id, String nome, String matricula, Date dataNascimento) {
+    public Aluno(Long id, String nome, String matricula, Date dataNascimento) {
         this.id = id;
         this.nome = nome;
         this.matricula = matricula;
         this.dataNascimento = dataNascimento;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

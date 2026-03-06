@@ -4,37 +4,37 @@ import java.time.LocalDateTime;
 
 public class Aula {
 
-    private int id;
-    private int idTurma;
+    private Long id;
+    private Long idTurma;
     private LocalDateTime dataHora;
     private String assunto;
 
-    public Aula(int idTurma, LocalDateTime dataHora, String assunto) {
+    public Aula(Long idTurma, LocalDateTime dataHora, String assunto) {
         this.idTurma = idTurma;
         this.dataHora = dataHora;
         this.assunto = assunto;
     }
 
-    public Aula(int id, int idTurma, LocalDateTime dataHora, String assunto) {
+    public Aula(Long id, Long idTurma, LocalDateTime dataHora, String assunto) {
         this.id = id;
         this.idTurma = idTurma;
         this.dataHora = dataHora;
         this.assunto = assunto;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getIdTurma() {
+    public Long getIdTurma() {
         return idTurma;
     }
 
-    public void setIdTurma(int idTurma) {
+    public void setIdTurma(Long idTurma) {
         this.idTurma = idTurma;
     }
 

@@ -2,45 +2,45 @@ package com.example.Escola.model;
 
 public class Nota {
 
-    private int id;
-    private int alunoId;
-    private int aulaId;
+    private Long id;
+    private Long alunoId;
+    private Long aulaId;
     private double valor;
 
-    public Nota(int alunoId, int aulaId, double valor) {
+    public Nota(Long alunoId, Long aulaId, double valor) {
         this.alunoId = alunoId;
         this.aulaId = aulaId;
         this.valor = valor;
     }
 
-    public Nota(int id, int alunoId, int aulaId, double valor) {
+    public Nota(Long id, Long alunoId, Long aulaId, double valor) {
         this.id = id;
         this.alunoId = alunoId;
         this.aulaId = aulaId;
         this.valor = valor;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public int getAlunoId() {
+    public Long getAlunoId() {
         return alunoId;
     }
 
-    public void setAlunoId(int alunoId) {
+    public void setAlunoId(Long alunoId) {
         this.alunoId = alunoId;
     }
 
-    public int getAulaId() {
+    public Long getAulaId() {
         return aulaId;
     }
 
-    public void setAulaId(int aulaId) {
+    public void setAulaId(Long aulaId) {
         this.aulaId = aulaId;
     }
 
