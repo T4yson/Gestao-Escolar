@@ -1,23 +1,25 @@
 package com.example.Escola.model;
 
+import java.util.List;
+
 public class Curso {
 
     private int id;
     private String nome;
     private String codigo;
-    private int professrorId;
+    private List<Integer> listaProfessrorId;
 
-    public Curso(String nome, String codigo, int professrorId) {
+    public Curso(String nome, String codigo, List<Integer> listaProfessrorId) {
         this.nome = nome;
         this.codigo = codigo;
-        this.professrorId = professrorId;
+        this.listaProfessrorId = listaProfessrorId;
     }
 
-    public Curso(int id, String nome, String codigo, int professrorId) {
+    public Curso(int id, String nome, String codigo, List<Integer> listaProfessrorId) {
         this.id = id;
         this.nome = nome;
         this.codigo = codigo;
-        this.professrorId = professrorId;
+        this.listaProfessrorId = listaProfessrorId;
     }
 
     public int getId() {
@@ -44,11 +46,11 @@ public class Curso {
         this.codigo = codigo;
     }
 
-    public int getProfessrorId() {
-        return professrorId;
+    public List<Integer> getListaProfessrorId() {
+        return listaProfessrorId;
     }
 
-    public void setProfessrorId(int professrorId) {
-        this.professrorId = professrorId;
+    public void setListaProfessrorId(List<Integer> listaProfessrorId) {
+        this.listaProfessrorId = listaProfessrorId;
     }
 }
