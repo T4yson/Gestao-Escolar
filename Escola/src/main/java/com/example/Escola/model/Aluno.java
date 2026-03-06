@@ -6,18 +6,21 @@ public class Aluno {
 
     private Long id;
     private String nome;
+    private String email;
     private String matricula;
     private Date dataNascimento;
 
-    public Aluno(String nome, String matricula, Date dataNascimento) {
+    public Aluno(String nome, String email, String matricula, Date dataNascimento) {
         this.nome = nome;
+        this.email = email;
         this.matricula = matricula;
         this.dataNascimento = dataNascimento;
     }
 
-    public Aluno(Long id, String nome, String matricula, Date dataNascimento) {
+    public Aluno(Long id, String nome, String email, String matricula, Date dataNascimento) {
         this.id = id;
         this.nome = nome;
+        this.email = email;
         this.matricula = matricula;
         this.dataNascimento = dataNascimento;
     }
@@ -36,6 +39,14 @@ public class Aluno {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getMatricula() {

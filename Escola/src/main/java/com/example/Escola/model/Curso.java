@@ -22,6 +22,12 @@ public class Curso {
         this.listaProfessrorId = listaProfessrorId;
     }
 
+    public Curso(long id, String nome, String codigo) {
+    }
+
+    public Curso(long id, long alunoId, long aulaId, double valor) {
+    }
+
     public Long getId() {
         return id;
     }

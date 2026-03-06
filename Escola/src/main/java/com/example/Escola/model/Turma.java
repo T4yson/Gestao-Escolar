@@ -25,6 +25,9 @@ public class Turma {
         this.listaAlunos = listaAlunos;
     }
 
+    public Turma(long id, String nome, long cursoId, long professorId) {
+    }
+
     public Long getId() {
         return id;
     }
